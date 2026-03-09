@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Mohan Rout - Power Sector Leadership & Regulatory Excellence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a3a52;
+            --accent: #e74c3c;
+            --gold: #d4af37;
+            --light-bg: #f8f9fa;
+            --dark-text: #2c3e50;
+            --border: #ddd;
+            --secondary: #16a085;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+            line-height: 1.6;
+            background: var(--light-bg);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #0f2540 100%);
+            color: white;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .header-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+
+        .designation {
+            font-size: 1.3em;
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-line {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.9);
+            max-width: 500px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-box .number {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: var(--gold);
+            display: block;
+        }
+
+        .stat-box .label {
+            font-size: 0.95em;
+            color: rgba(255,255,255,0.85);
+            margin-top: 8px;
+        }
+
+        .contact-section {
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .contact-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            font-size: 0.95em;
+            color: rgba(255,255,255,0.9);
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-item strong {
+            color: var(--gold);
+            margin-right: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 20px;
+            background: white;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        section:nth-child(odd) {
+            background: var(--light-bg);
+            margin-top: 0;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .highlight-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid var(--secondary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .highlight-card h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .highlight-card p {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+
+        .experience-container {
+            margin-top: 40px;
+        }
+
+        .experience-item {
+            margin-bottom: 35px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .role-header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            margin-bottom: 15px;
+            align-items: start;
+        }
+
+        .role-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .role-meta {
+            background: var(--accent);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .location {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+
+        .achievements {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .achievements li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .achievements li:before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .skill-category h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: var(--light-bg);
+            color: var(--primary);
+            padding: 8px 14px;
+            margin: 6px 6px 6px 0;
+            border-radius: 20px;
+            font-size: 0.85em;
+            border: 1px solid var(--border);
+            font-weight: 500;
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .cert-item {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fc 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .cert-item h4 {
+            color: var(--primary);
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .cert-item p {
+            color: #333;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta-section h2 {
+            color: #1a3a52;
+            border-bottom: 3px solid var(--gold);
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 14px 35px;
+            font-size: 1em;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--gold);
+            color: white;
+            border: 2px solid var(--gold);
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .btn-secondary:hover {
+            background: #e8c547;
+            color: white;
+            border-color: #e8c547;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #999;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .award-item {
+            background: linear-gradient(135deg, #fff5e6 0%, #fffbf0 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid var(--gold);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .award-item h4 {
+            color: var(--primary);
+            font-size: 1em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .award-item p {
+            color: #333;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .header-text h1 {
+                font-size: 2.2em;
+            }
+
+            .quick-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .certifications {
+                grid-template-columns: 1fr;
+            }
+
+            .awards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* Animations */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: slideInUp 0.6s ease forwards;
+        }
+
+        section:nth-child(1) { animation-delay: 0.1s; }
+        section:nth-child(2) { animation-delay: 0.2s; }
+        section:nth-child(3) { animation-delay: 0.3s; }
+        section:nth-child(4) { animation-delay: 0.4s; }
+
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="header-text">
+                    <h1>Radha Mohan Rout</h1>
+                    <p class="designation">IES (Retd) | Senior Power Sector Leader</p>
+                    <p class="tag-line">38+ years transforming regulatory complexity into operational excellence across military infrastructure, power utilities, DISCOMs, and strategic defense projects.</p>
+                    
+                    <div class="quick-stats">
+                        <div class="stat-box">
+                            <span class="number">38+</span>
+                            <span class="label">Years Leadership</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="number">~5000</span>
+                            <span class="label">Personnel Led</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="number">₹30Cr+</span>
+                            <span class="label">Annual Savings</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> <a href="tel:7887793975" style="color: var(--gold); text-decoration: none; font-weight: 600;">7887793975</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:radhamohanrout@yahoo.in" style="color: var(--gold); text-decoration: none; font-weight: 600;">radhamohanrout@yahoo.in</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/radha-mohan-rout-b596a965" target="_blank" style="color: var(--gold); text-decoration: none; font-weight: 600;">linkedin.com/in/radha-mohan-rout-b596a965</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CORE EXPERTISE -->
+    <section>
+        <div class="container">
+            <h2>Core Expertise</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <h3>🔌 Power Sector Mastery</h3>
+                    <p>Deep expertise in power procurement optimization, DISCOM operations, power trading, open access frameworks, and renewable energy integration across India's energy landscape.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>⚖️ Regulatory Excellence</h3>
+                    <p>Proven track record navigating State Electricity Regulatory Commissions (SERCs), policy formulation, compliance frameworks, and high-stakes technical presentations to regulatory bodies.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>🏛️ Institutional Leadership</h3>
+                    <p>Led large-scale, diverse teams (500-5000+ personnel) through military-grade discipline, strategic planning, and governance excellence across multiple geographic regions and complex operations.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>💰 Financial Optimization</h3>
+                    <p>Delivered ₹30+ crore annual savings for Ministry of Defence through data-driven optimization, market-linked procurement, and IEX power trading strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section>
+        <div class="container">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-container">
+                <!-- Director Utilities MES -->
+                <div class="experience-item">
+                    <div class="role-header">
+                        <div>
+                            <div class="role-title">Director (Utilities), Military Engineer Services</div>
+                            <div class="location">New Delhi, India</div>
+                        </div>
+                        <div class="role-meta">2022 - 2024 | 2 Years</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Spearheaded nationwide implementation of Open Access and Deemed Licensee Status for MES across strategic locations</li>
+                        <li>Orchestrated technical case presentations to State Electricity Regulatory Commissions (SERCs), securing critical project approvals</li>
+                        <li>Formulated forward-looking policies for electrical and solar power project execution, supervision, and evacuation</li>
+                        <li>Conducted high-level technical discussions with SERC Chairmen and Secretaries to advance MES regulatory positioning</li>
+                    </ul>
+                </div>
+
+                <!-- Commander Works Engineer -->
+                <div class="experience-item">
+                    <div class="role-header">
+                        <div>
+                            <div class="role-title">Commander Works Engineer (Utilities), DISCOM Delhi Cantt</div>
+                            <div class="location">New Delhi, India</div>
+                        </div>
+                        <div class="role-meta">2019 - 2022 | 3 Years</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Negotiated and executed solar power procurement agreement with NTPC REL: 25 MW at ₹2.57/unit for 25 years—securing ₹50+ crore value</li>
+                        <li>Helmed DISCOM operations as CEO, serving 5,000+ personnel with ₹30 crore annual savings through power optimization and market-linked procurement</li>
+                        <li>Pioneered GIS infrastructure management and DISCOM billing system optimization for improved asset and revenue management</li>
+                        <li>Organized and led Power Trading & Open Access workshops for MES establishments nationwide</li>
+                    </ul>
+                </div>
+
+                <!-- Senior Electrical Inspector -->
+                <div class="experience-item">
+                    <div class="role-header">
+                        <div>
+                            <div class="role-title">Senior Electrical Inspector, Military Engineer Services</div>
+                            <div class="location">Pune Camp, Maharashtra</div>
+                        </div>
+                        <div class="role-meta">2016 - 2019 | 3 Years</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Directed large-scale electrical inspection and regulatory compliance for LV, LT, and HT networks across Army Southern Command</li>
+                        <li>Led switchgear, distribution network, and power transformer commissioning projects—ensuring operational readiness and safety compliance</li>
+                        <li>Formulated compliance-driven policies strengthening regulatory adherence and institutional governance</li>
+                    </ul>
+                </div>
+
+                <!-- Director Utilities Secunderbad -->
+                <div class="experience-item">
+                    <div class="role-header">
+                        <div>
+                            <div class="role-title">Director (Utilities), Multi-State MES Operations</div>
+                            <div class="location">Secunderabad, Telangana</div>
+                        </div>
+                        <div class="role-meta">2014 - 2016 | 2 Years</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Led electrical and mechanical operations across 7 states supporting DRDO labs and strategic research facilities</li>
+                        <li>Directed contract drafting, tendering processes, and transparency compliance for large-scale E&M projects</li>
+                        <li>Negotiated tariff bifurcation with Bangalore Electricity Supply Company, delivering ₹52 lakh annual savings to Defence Services</li>
+                    </ul>
+                </div>
+
+                <!-- Joint Director DRDO -->
+                <div class="experience-item">
+                    <div class="role-header">
+                        <div>
+                            <div class="role-title">Joint Director, DRDO Infrastructure</div>
+                            <div class="location">Hyderabad & Bengaluru, India</div>
+                        </div>
+                        <div class="role-meta">2007 - 2014 | 7 Years</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Led large-scale infrastructure upgrades for DRDO facilities—offices, housing, and E&M systems enhancing institutional reputation</li>
+                        <li>Exercised independent technical judgment on 66 kV transmission project, successfully opposing non-contractual changes and avoiding ₹103.50 lakh in unjustified contractor claims</li>
+                        <li>Managed multidisciplinary infrastructure covering electrical power, water supply, HVAC, lifts, and DG systems with end-to-end financial and contract governance</li>
+                    </ul>
+                </div>
+
+                <!-- NTPC Experience -->
+                <div class="experience-item">
+                    <div class="role-header">
+                        <div>
+                            <div class="role-title">Power System Engineer, NTPC Limited</div>
+                            <div class="location">Bihar Sharif, Bihar</div>
+                        </div>
+                        <div class="role-meta">1988 - 1991 | 3 Years</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Spearheaded execution and commissioning of 400/220/33 kV Switchyard at Biharsharif</li>
+                        <li>Oversaw 400 kV Kahalagaon-Biharsharif transmission corridor ensuring timely grid integration</li>
+                        <li>Delivered critical grid infrastructure with operational excellence and regulatory compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY ACHIEVEMENTS -->
+    <section>
+        <div class="container">
+            <h2>Key Achievements & Impact</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <h3>🎯 ₹30 Crore Annual Savings</h3>
+                    <p>Drove data-driven power optimization and market-linked procurement (IEX & PPAs) as DISCOM Head, delivering substantial financial value to Ministry of Defence operations.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>⚡ 25 MW Solar Procurement</h3>
+                    <p>Negotiated landmark 25-year solar agreement with NTPC REL at ₹2.57/unit—a strategic, sustainable energy solution worth ₹50+ crore in value.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>📊 Policy Leadership</h3>
+                    <p>Formulated and executed compliance-driven policies strengthening regulatory adherence. Conducted technical presentations to multiple SERCs securing critical project approvals.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>🛡️ Cost Avoidance</h3>
+                    <p>Exercised technical judgment opposing non-contractual specification changes on 66 kV transmission project, avoiding ₹103.50 lakh in unjustified contractor claims.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & EXPERTISE -->
+    <section>
+        <div class="container">
+            <h2>Technical Skills & Expertise</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Power Sector</h4>
+                    <span class="skill-tag">Power Procurement</span>
+                    <span class="skill-tag">DISCOM Operations</span>
+                    <span class="skill-tag">Open Access</span>
+                    <span class="skill-tag">Renewable Energy</span>
+                    <span class="skill-tag">Power Trading (IEX)</span>
+                    <span class="skill-tag">PPA Negotiation</span>
+                </div>
+                <div class="skill-category">
+                    <h4>Regulatory & Compliance</h4>
+                    <span class="skill-tag">SERC Navigation</span>
+                    <span class="skill-tag">Policy Formulation</span>
+                    <span class="skill-tag">Regulatory Compliance</span>
+                    <span class="skill-tag">Government Relations</span>
+                    <span class="skill-tag">Licensing Frameworks</span>
+                    <span class="skill-tag">Technical Documentation</span>
+                </div>
+                <div class="skill-category">
+                    <h4>Operations & Leadership</h4>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Contract Management</span>
+                    <span class="skill-tag">Electrical Infrastructure</span>
+                    <span class="skill-tag">GIS Systems</span>
+                    <span class="skill-tag">Procurement</span>
+                    <span class="skill-tag">Team Leadership (5000+)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & CREDENTIALS -->
+    <section>
+        <div class="container">
+            <h2>Certifications & Credentials</h2>
+            
+            <div class="certifications">
+                <div class="cert-item">
+                    <h4>Certified Energy Manager (BEE)</h4>
+                    <p>Bureau of Energy Efficiency, Ministry of Power, India</p>
+                </div>
+                <div class="cert-item">
+                    <h4>PSC (DSSC Wellington)</h4>
+                    <p>Defence Services Staff College, Wellington</p>
+                </div>
+                <div class="cert-item">
+                    <h4>M.Tech - Electrical & Power Systems</h4>
+                    <p>Indian Institute of Technology, Kharagpur</p>
+                </div>
+                <div class="cert-item">
+                    <h4>Master of Science - Defence & Strategic Studies</h4>
+                    <p>University of Madras, Defence Services Staff College</p>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 50px;">Honors & Awards</h2>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <h4>Army Commander, Southern Command Commendation Card</h4>
+                    <p>Recognition for distinguished service and leadership excellence</p>
+                </div>
+                <div class="award-item">
+                    <h4>Engineer in Chief Commendation Card</h4>
+                    <p>Outstanding engineering and operational achievement</p>
+                </div>
+                <div class="award-item">
+                    <h4>General Officer Commanding, Delhi Area Commendation Card</h4>
+                    <p>Exceptional leadership in high-responsibility postings</p>
+                </div>
+                <div class="award-item">
+                    <h4>Stood First in M.Tech</h4>
+                    <p>Academic excellence in Electrical Engineering, IIT Kharagpur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Organization's Power Strategy?</h2>
+            <p style="font-size: 1.1em; margin-top: 20px; color: #1a3a52; font-weight: 500; line-height: 1.8;">
+                With 38 years of proven expertise in regulatory navigation, operational excellence, and financial optimization, I'm positioned to drive impact across the power sector. Let's connect and explore how my experience can advance your organization's strategic objectives.
+            </p>
+            <div class="cta-buttons">
+                <a href="mailto:radhamohanrout@yahoo.in
